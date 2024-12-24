@@ -1,18 +1,23 @@
-import { useState } from 'react';
+import React,{Component} from 'react'
 import logo from './logo.svg';
 import './App.css';
-
-function App() {
-  const [data,setdata]=useState("nicky")
-  function updatedata(){
-    setdata("ajay")
+class App extends Component {
+  constructor(){
+    super();
+    this.state={data:"nicky"}
   }
-  return (
-    <div className="App">
-      <h1>{data}</h1>
-      <button onClick={updatedata}>click me</button>
-    </div>
-  );
+  apple(){
+    this.setState({data:"ajay"})
+  }
+  render()
+  {
+    return (
+      <div className="App">
+        <h1>{this.state.data} </h1>
+        <button onClick={()=>this.apple()}>click me</button>
+      </div>
+    );
+  }
 }
 
 export default App;
