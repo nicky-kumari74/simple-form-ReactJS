@@ -1,16 +1,14 @@
-import {useState} from 'react'
+
 import logo from './logo.svg';
 import './App.css';
+import User from './User';
 
 function App() {
-  const [data,setdata]=useState("nicky")
-  function updatedata(){
-    setdata("ajay")
-  }
   return (
     <div className="App">
-      <h1>{data}</h1>
-      <button onClick={updatedata}>click me</button>
+      <h1>Props in React :</h1>
+      <User name={"nicky"} email="nicky@gmail.com"/>
+      <User name={"ajay"} email="ajay@gmail.com"/>
     </div>
   );
 }
