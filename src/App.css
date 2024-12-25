@@ -1,7 +1,22 @@
 .App {
   text-align: center;
+  background-color: lightpink;
+  width: 30%;
+  margin-left: 35%;
+  height: 400px;
+  border-radius: 10px;
+  margin-top: 50px;
+  padding-top: 2px;
 }
-
+label{
+  font-size: large;
+}
+.box{
+  width: 40%;
+  height: 30px;
+  font-size: medium;
+  border-radius: 10px;
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;
